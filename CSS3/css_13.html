@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<!-- 구조 선택자
+구조에 따라 CSS 속성을 변경할 수 있다. -->
+    <style>
+        #content {
+            width:300px;
+        }
+
+        ul li {
+            list-style:none;
+            border:1px solid #cccccc;
+            padding:10px;
+            background-color:#efefef;
+            font-weight:bold;
+            font-size:20px;
+        }
+        /* 기본 하이퍼링크 색은 파란색 */
+        ul li a { 
+            color:#000000;
+        }
+        /* n은 0부터 설정된다. */
+        ul li:nth-child(2n+1) {
+            background-color:#de9393;
+        }
+
+        ul li:first-child, ul li:last-child {
+            background-color:yellow;
+        }
+        /* 순서대로 좌상단 우상단 우하단 죄하단 */
+        ul li:first-child {
+            border-radius:10px 10px 0 0;
+        }
+
+        ul li:last-child {
+            border-radius:0 0 10px 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="content">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+            <li><a href="#">menu6</a></li>
+            <li><a href="#">menu7</a></li>
+            <li><a href="#">menu8</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
