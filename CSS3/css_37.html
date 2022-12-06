@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        div:nth-child(1) {
+            width:200px; height:200px;
+            background-color:red;
+            position:static;
+            top:0; left:0;
+        }
+
+        div:nth-child(2) {
+            width:200px; height:200px;
+            background-color:rgb(228, 176, 225);
+            position:static;
+            top:50px; left:50px;
+        }
+
+        div:nth-child(3) {
+            width:200px; height:200px;
+            background-color:rgb(0, 247, 255);
+            position:absolute;
+            top:200px; left:200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>static 속성</div>
+    <div>static 속성, 위치값 지정해줘도 무시됨</div>
+    <div>absolute 속성, 위치값 지정한대로 적용</div>
+</body>
+</html>
