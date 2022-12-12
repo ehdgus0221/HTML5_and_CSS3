@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+/* 변환 속성 예제 */
+        #conent_wrap1 { width:200px; height:180px; border:5px solid #ff6a00; }
+        #conent_wrap1 #content_tran { 
+            width:200px; height:200px; line-height:200px;
+            text-align:center; background-color:#59a3f3; opacity:0.5;
+            transform:rotate(25deg) skewX(20deg) scale(2);
+        }
+
+        #conent_wrap2 { width:200px; height:200px; border:5px solid #ff6a00; }
+        #conent_wrap2 #content_tran {
+            width:200px; height:200px; line-height:200px; 
+            text-align:center; background-color:#da9fff; opacity:0.5;
+            transform:rotate(300deg) scale(1.5);
+            transform-origin:top right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="conent_wrap1">
+        <div id="content_tran">content</div>
+    </div>
+<!-- 사각형 요소 사이 간격을 위해 공백속성 추가 -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div id="conent_wrap2">
+        <div id="content_tran">content</div>
+    </div>
+
+</body>
+</html>

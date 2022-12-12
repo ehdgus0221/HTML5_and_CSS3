@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+/* 다양한 변형 효과 예제 */
+        * { margin:0; padding:0; }
+        li { list-style:none }
+        a { text-decoration:none; }
+
+        #wrap { width:850px; height:500px; margin:0 auto; }
+
+        #wrap #case ul li { float:left; }
+        #wrap #case ul li a { display:block; padding:5px 64px; background-color:#000000; color:#ffffff; }
+
+        #wrap #case ul li:nth-child(1) a:hover { background-color:#a167d8; 
+                                                transform:scale(2); transform-origin:50% 0; z-index:9999; }
+
+        #wrap #case ul li:nth-child(2) a:hover { background-color:#a167d8;  
+                                                transform:rotate(5deg); z-index:9999; }
+
+        #wrap #case ul li:nth-child(3) a:hover { background-color:#a167d8; 
+                                                transform:skewX(-15deg); z-index:9999; }
+
+        #wrap #case ul li:nth-child(4) a:hover { background-color:#a167d8;  
+                                                transform:scale(2) rotate(5deg) skewX(-15deg); 
+                                                transform-origin:50% 0; z-index:9999; }
+
+        #wrap #case ul li:nth-child(5) a:hover { 
+            background-color:#63b5f9;
+            animation-name:ani; animation-duration:2s;  animation-iteration-count:infinite; animation-direction:alternate;
+        }
+
+        @keyframes ani {
+            from {
+                
+            }
+
+            to {
+                background-color:#ffff00; transform:scale(2) rotate(5deg) skewX(-15deg); transform-origin:50% 0; z-index:9999;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="case">
+            <ul>
+                <li><a href="#none" alt="">case1</a></li>
+                <li><a href="#none" alt="">case2</a></li>
+                <li><a href="#none" alt="">case3</a></li>
+                <li><a href="#none" alt="">case4</a></li>
+                <li><a href="#none" alt="">case5</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
