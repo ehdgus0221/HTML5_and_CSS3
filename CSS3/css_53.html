@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<!-- 별도로 분리한 css파일 불러오기 -->
+
+    <link rel="stylesheet" href="title.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="date.css" />
+
+    <style>
+
+        * { margin:0; padding:0; }
+      
+        #wrap { width:800px; margin:0 auto; border:1px solid #cccccc; padding:10px; }
+        hr { margin:10px 0; }
+
+        /* 분리를 하지 않았을 경우 : html 문서에 작성하여 코드가 길어진다. 가독성 떨어짐
+        #wrap .title { text-align:center; height:100px; line-height:100px; text-decoration:underline; }
+        #wrap .content { background-color:#3d5208; color:white; padding:30px 10px; }
+        #wrap .date { height:70px; padding-top:30px; text-align:center; }
+        */
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="title">
+            <h1>NOTICE</h1>
+        </div>
+
+        <hr />
+
+        <div class="content">
+            <p>
+                CSS 규칙 : html문서에 css 속성까지 다 입력하면 나중에 코드가 많이 길어지므로 CSS를 분리하여 사용하는 것이 좋다.
+                CSS는 별도의 파일로 저장 후 head태그에 link rel="stylesheet" href="파일이름.css" / 형식으로 저장한다.
+            </p>
+        </div>
+
+        <hr />
+
+        <div class="date">
+            <p>2022. 12. 13<br /> Lim-Dong-Hyeon</p>
+        </div>
+    </div>
+</body>
+</html>
