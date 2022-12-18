@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Basic</title>
+
+    <style>
+        *{margin:0; padding:0;}
+
+        #Web_Site{
+            display:grid;
+            background-color: rgb(225, 222, 88);
+            padding:5px; margin: 5 auto;
+            grid-template-areas: 
+            'Header Header Header Header Header Header Header'
+            'Nav Nav Nav Nav Nav Nav Nav'
+            'Content_Section Content_Section Content_Section Content_Main Content_Main Content_Main Content_Aside'
+            'Footer Footer Footer Footer Footer Footer Footer'
+            ;
+            
+        }
+
+        .Header{grid-area:Header}
+        .Nav{grid-area:Nav;}
+        .Content_Section{grid-area:Content_Section; height: 200px;}
+        .Content_Main{grid-area:Content_Main; height: 200px;}
+        .Content_Aside{grid-area:Content_Aside; height: 200px;}
+        .Footer{grid-area:Footer}
+
+        #Web_Site div{
+            background-color: rgb(109, 109, 234);
+            border:2px solid rgb(20, 20, 148);
+            padding:10px; margin:5px;
+            text-align:center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="Web_Site">
+        <div class="Header">header</div>
+        <div class="Nav">nav</div>
+        <div class="Content_Section">section</div>
+        <div class="Content_Main">main</div>
+        <div class="Content_Aside">aside</div>
+        <div class="Footer">footer</div>
+    </div>
+</body>
+</html>
