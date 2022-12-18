@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Basic</title>
+
+    <style>
+        *{margin:0; padding:0;}
+
+        .Grid-Container_01 {
+            display:grid;
+            margin-bottom: 100px;
+            grid-template-columns: 400px 400px ;
+            grid-template-rows: 100px 100px 100px ;
+        }
+        
+        .Grid-Container_02 {
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+        }
+
+        .Grid-Container_02 .grid-item{
+            width:70px; height:50px;
+        }
+
+        .grid-item {
+            background-color: beige;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5em;
+            border: 2px solid cornflowerblue;
+        }
+
+        .Grid_01 {
+            grid-column-gap: 25px;
+            grid-row-gap: 15px;
+        }
+
+        .Grid_02{
+            justify-content: space-evenly;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="Grid-Container_01 Grid_01">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <div class="Grid-Container_02 Grid_02">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>
